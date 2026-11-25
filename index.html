@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Zona etiquetas META  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Zona de recursos enlazados y titulo -->
+  <title>
+    Vidas Libres - Red de Apoyo
+  </title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<!-- BARRA SUPERIOR DE SEGURIDAD PARA SALIR -->
+<body>
+  <div class="barra-seguridad">
+    <span>
+    <img src="data:image/png;base64,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" 
+  alt="Escudo de seguridad" class="icono-24 no-encoger">
+    <!-- Imagen generada con IA para ser unica -->
+    Tu seguridad es lo primero. Usa este botón si necesitas salir de la web.</span>
+    <button class="boton-salida-rapida" onclick="salidaRapida()">SALIDA RáPIDA
+      <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTggMTN2NmEyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMlY4YTIgMiAwIDAgMSAyLTJoNiIvPjxwb2x5bGluZSBwb2ludHM9IjE1IDMgMjEgMyAyMSA5Ii8+PGxpbmUgeDE9IjEwIiB5MT0iMTQiIHgyPSIyMSIgeTI9IjMiLz48L3N2Zz4="
+  alt="Salir" class="icono-16">
+      <!-- Imagen generada con IA para ser unica -->
+    </button>
+  </div>
+  <!-- HEADER / NAVEGACIÓN  -->
+  <header>
+    <a href="#" class="logotipo">
+    <div class="icono-logotipo">
+      <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzYgMzYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMTMiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTE4IDI0LjVDMTggMjQuNSAxMSAyMCAxMSAxNC41QzExIDEyLjI5MDkgMTIuNzkwOSAxMC41IDE1IDEwLjVDMTYuMzA5MyAxMC41IDE3LjQ3MTcgMTEuMTI4OCAxOCAxMi4xQzE4LjUyODMgMTEuMTI4OCAxOS42OTA3IDEwLjUgMjEgMTAuNUMyMy4yMDkxIDEwLjUgMjUgMTIuMjkwOSAyNSAxNC41QzI1IDIwIDE4IDI0LjUgMTggMjQuNVoiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTUuNSAxNi41TDE3LjIgMTguMkwyMC44IDE0LjYiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=" alt="Icono corazón verificado" class="icono-48 no-encoger">
+      <!-- Imagen generada con IA para ser unica -->
+    </div>
+    <div class="texto-logotipo">
+      <strong>Vidas Libres</strong><small>RED DE APOYO</small>
+    </div></a>
+    <nav>
+      <a href="#que-es">Qué es</a><a href="#semaforo">Semáforo</a><a href="#pide-ayuda">Pide Ayuda</a><a href="#educacion">Educación</a><a href="#testimonios">Testimonios</a><a href="#puntos-violeta">Puntos Violeta</a><a href="#suma-espacio">Suma tu espacio</a><a href="#contacto">Contacto</a><a href="tel:016" class="boton-016">
+      <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+"
+  alt="Teléfono" class="icono-16">
+      <!-- Imagen generada con IA para ser unica -->
+      016</a>
+    </nav>
+  </header>
+  <!-- INICIO BANNER -->
+  <section class="banner-principal">
+    <div class="contenido-banner">
+      <span class="etiqueta-banner">Estamos aquí para ayudarte</span>
+      <h1>Por una vida libre de violencia
+      </h1>
+      <p>Información, apoyo y recursos para prevenir y erradicar la violencia de género. No estás sola. No estás solo.
+      </p>
+      <div class="acciones-banner">
+        <a href="#pide-ayuda" class="boton-banner-blanco">
+        <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" 
+  alt="Teléfono" class="icono-16">
+        <!-- Imagen generada con IA para ser unica -->
+        Pedir ayuda ahora</a><a href="#que-es" class="boton-banner-borde">Conocer más</a>
+      </div>
+    </div>
+  </section>
+  <!-- TARJETAS DE ACCESO RáPIDO -->
+  <div class="contenedor">
+    <div class="cuadricula-accesos">
+      <a href="#pide-ayuda" class="tarjeta-acceso">
+      <div class="icono-caja">
+        <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" 
+        alt="Icono teléfono" class="icono-24">
+        <!-- Imagen generada con IA para ser unica -->
+      </div>
+      <h3>Pide Ayuda
+      </h3>
+      <p>Teléfonos de emergencia, recursos y orientación disponible 24/7.
+      </p></a><a href="#que-es" class="tarjeta-acceso">
+      <div class="icono-caja">
+        <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIgM2g2YTQgNCAwIDAgMSA0IDR2MTRhMyAzIDAgMCAwLTMtM0gyeiIvPjxwYXRoIGQ9Ik0yMiAzaC02YTQgNCAwIDAgMC00IDR2MTRhMyAzIDAgMCAxIDMtM2g3eiIvPjwvc3ZnPg==" 
+          alt="Icono libro" class="icono-24">
+        <!-- Imagen generada con IA para ser unica -->
+      </div>
+      <h3>Qué es la violencia de género
+      </h3>
+      <p>Conoce los tipos de violencia, señales de alerta y datos importantes.
+      </p></a><a href="#suma-espacio" class="tarjeta-acceso">
+      <div class="icono-caja">
+        <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iNCIgeT0iMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjIwIiByeD0iMiIvPjxsaW5lIHgxPSI5IiB5MT0iNiIgeDI9IjkuMDEiIHkyPSI2Ii8+PGxpbmUgeDE9IjE1IiB5MT0iNiIgeDI9IjE1LjAxIiB5Mj0iNiIvPjxsaW5lIHgxPSI5IiB5MT0iMTAiIHgyPSI5LjAxIiB5Mj0iMTAiLz48bGluZSB4MT0iMTUiIHkxPSIxMCIgeDI9IjE1LjAxIiB5Mj0iMTAiLz48bGluZSB4MT0iOSIgeTE9IjE0IiB4Mj0iOS4wMSIgeTI9IjE0Ii8+PGxpbmUgeDE9IjE1IiB5MT0iMTQiIHgyPSIxNS4wMSIgeTI9IjE0Ii8+PHBhdGggZD0iTTkgMjJ2LTRoNnY0Ii8+PC9zdmc+" alt="Icono edificio" class="icono-24">
+        <!-- Imagen generada con IA para ser unica -->
+      </div>
+      <h3>Suma tu espacio
+      </h3>
+      <p>Registra tu comercio o centro educativo como Espacio Seguro.
+      </p></a>
+    </div>
+  </div>
+  <!-- SECCIÓN: TIPOS DE VIOLENCIA -->
+  <section id="que-es">
+    <div class="contenedor">
+      <div class="cabecera-seccion">
+        <h2>¿Qué es la violencia de género?
+        </h2>
+      </div>
+      <div class="caja-aviso">
+        <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHkxPSI4IiB4Mj0iMTIiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeTE9IjE2IiB4Mj0iMTIuMDEiIHkyPSIxNiIvPjwvc3ZnPg==" 
+      alt="Información" class="icono-18">
+        <!-- Imagen generada con IA para ser unica -->
+        <strong>Importante:</strong>
+      <p>La violencia de género puede manifestarse de muchas formas. No hace falta sufrir violencia física para ser víctima. El control, la manipulación y el maltrato psicológico también son violencia.
+      </p>
+      </div>
+    </div>
+    <div class="cabecera-seccion">
+      <span class="insignia">RECONOCER ES EL PRIMER PASO</span>
+      <h2>Tipos de violencia
+      </h2>
+      <p>No siempre deja marcas visibles. Puede aparecer en el cuerpo, las emociones, la economía, la intimidad o el entorno digital.
+      </p>
+    </div>
+    <div class="cuadricula-violencias">
+      <div class="tarjeta-violencia">
+        <div class="cabecera-tarjeta-violencia">
+          <div class="icono-caja">
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEweiIvPjwvc3ZnPg==" 
+          alt="Escudo" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div><span class="etiqueta-violencia">SOBRE EL CUERPO</span>
+        </div>
+        <h3>Violencia Física
+        </h3>
+        <p>Cualquier acto que cause daño físico a través de la <span class="subrayado-morado">fuerza</span> : golpes, empujones, tirones de pelo, etc.
+        </p><span class="numero-violencia">01</span>
+      </div>
+      <div class="tarjeta-violencia">
+        <div class="cabecera-tarjeta-violencia">
+          <div class="icono-caja">
+            <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%237e22ce%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M9.5%202A2.5%202.5%200%200%201%2012%204.5v15a2.5%202.5%200%200%201-4.96.44%202.5%202.5%200%200%201-2.96-3.08%203%203%200%200%201-.34-5.58%202.5%202.5%200%200%201%201.32-4.24%202.5%202.5%200%200%201%201.98-3A2.5%202.5%200%200%201%209.5%202Z%22%2F%3E%3Cpath%20d%3D%22M14.5%202A2.5%202.5%200%200%200%2012%204.5v15a2.5%202.5%200%200%200%204.96.44%202.5%202.5%200%200%200%202.96-3.08%203%203%200%200%200%20.34-5.58%202.5%202.5%200%200%200-1.32-4.24%202.5%202.5%200%200%200-1.98-3A2.5%202.5%200%200%200%2014.5%202Z%22%2F%3E%3C%2Fsvg%3E"
+         alt="Violencia Psicológica" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div><span class="etiqueta-violencia">SOBRE LAS EMOCIONES</span>
+        </div>
+        <h3>Violencia Psicológica
+        </h3>
+        <p><span class="subrayado-morado">Humillaciones</span> , insultos, amenazas, control, aislamiento, intimidación y manipulación emocional.
+        </p><span class="numero-violencia">02</span>
+      </div>
+      <div class="tarjeta-violencia">
+        <div class="cabecera-tarjeta-violencia">
+          <div class="icono-caja">
+            <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%237e22ce%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%2211%22%20width%3D%2218%22%20height%3D%2211%22%20rx%3D%222%22%20ry%3D%222%22%2F%3E%3Cpath%20d%3D%22M7%2011V7a5%205%200%200%201%2010%200v4%22%2F%3E%3C%2Fsvg%3E" alt="Candado" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div><span class="etiqueta-violencia">SIN CONSENTIMIENTO</span>
+        </div>
+        <h3>Violencia Sexual
+        </h3>
+        <p>Cualquier acto de naturaleza sexual no consentido: agresiones, acoso sexual, obligación a mantener relaciones.
+        </p><span class="numero-violencia">03</span>
+      </div>
+      <div class="tarjeta-violencia">
+        <div class="cabecera-tarjeta-violencia">
+          <div class="icono-caja">
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMSIgeT0iNCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjE2IiByeD0iMiIgcnk9IjIiLz48bGluZSB4MT0iMSIgeTE9IjEwIiB4Mj0iMjMiIHkyPSIxMCIvPjwvc3ZnPg==" alt="Tarjeta" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div><span class="etiqueta-violencia">SOBRE LA AUTONOMíA</span>
+        </div>
+        <h3>Violencia Económica
+        </h3>
+        <p>Control del dinero, prohibición de trabajar, apropiación de bienes o limitación de recursos económicos.
+        </p><span class="numero-violencia">04</span>
+      </div>
+      <div class="tarjeta-violencia">
+        <div class="cabecera-tarjeta-violencia">
+          <div class="icono-caja">
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iNSIgeT0iMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjIwIiByeD0iMiIgcnk9IjIiLz48bGluZSB4MT0iMTIiIHkxPSIxOCIgeDI9IjEyLjAxIiB5Mj0iMTgiLz48L3N2Zz4=" alt="Móvil" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div><span class="etiqueta-violencia">A TRAVéS DE PANTALLAS</span>
+        </div>
+        <h3>Violencia Digital
+        </h3>
+        <p>Control de redes sociales, ciberacoso, difusión de imágenes íntimas sin consentimiento, <span class="subrayado-morado">geolocalización</span> .
+        </p><span class="numero-violencia">05</span>
+      </div>
+      <div class="tarjeta-violencia">
+        <div class="cabecera-tarjeta-violencia">
+          <div class="icono-caja">
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgMTJzNC04IDExLTggMTEgOCAxMSA4LTQgOC0xMSA4LTExLTgtMTEtOHoiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIzIi8+PC9zdmc+" alt="Ojo" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div><span class="etiqueta-violencia">EN LA CULTURA</span>
+        </div>
+        <h3>Violencia Simbólica
+        </h3>
+        <p>Mensajes, estereotipos y patrones culturales que naturalizan la <span class="subrayado-morado">subordinación de las mujeres</span> .
+        </p><span class="numero-violencia">06</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN: SEMáFORO DE RELACIONES SANAS -->
+<section id="semaforo" class="seccion-semaforo">
+  <div class="contenedor">
+    <div class="cabecera-seccion cabecera-semaforo">
+      <div>
+        <span class="insignia">RECURSO INTERACTIVO</span>
+        <h2>Semáforo de relaciones sanas
+        </h2>
+      </div>
+      <p class="ancho-max-400">Selecciona un color y compara estas situaciones con lo que vives. Una sola señal roja ya merece atención.
+      </p>
+    </div>
+    <div class="caja-semaforo">
+      <div class="panel-izquierdo-semaforo">
+        <div class="cabecera-panel-semaforo">
+          <strong>¿Qué estás observando?</strong><span>PULSA UN COLOR</span>
+        </div>
+        <button class="boton-luz activo-verde" onclick="setSemaforo('green', this)">
+          <div class="circulo-luz verde">
+          </div>
+          <div>
+            <small>VERDE</small><strong>Adelante</strong>
+          </div>
+        </button>
+        <button class="boton-luz" onclick="setSemaforo('amber', this)">
+          <div class="circulo-luz ambar">
+          </div>
+          <div>
+            <small>AMARILLO</small><strong>Observa y pon límites</strong>
+          </div>
+        </button>
+        <button class="boton-luz" onclick="setSemaforo('red', this)">
+          <div class="circulo-luz rojo">
+          </div>
+          <div>
+            <small>ROJO</small><strong>Detente y pide ayuda</strong>
+          </div>
+        </button>
+      </div>
+      <div class="panel-derecho-semaforo" id="semaforo-display">
+        <div>
+          <div class="fila-superior-semaforo">
+            <div>
+              <div class="etiqueta-nivel texto-verde">
+                NIVEL VERDE
+              </div>
+              <h3>Una relación que cuida
+              </h3>
+            </div>
+            <div class="insignia-estado-semaforo">
+              <svg class="icono-ui pequeno" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+          </div>
+          <p class="texto-secundario mt-6">Hay libertad, escucha y acuerdos. Puedes ser tÚ sin miedo a una reacción.
+          </p>
+          <div class="cuadricula-senales">
+            <div class="item-senal">
+              <span class="punto-senal verde"></span> Respeta tus límites y decisiones
+            </div>
+            <div class="item-senal">
+              <span class="punto-senal verde"></span> Celebra tus amistades y proyectos
+            </div>
+            <div class="item-senal">
+              <span class="punto-senal verde"></span> Podéis hablar sin miedo
+            </div>
+            <div class="item-senal">
+              <span class="punto-senal verde"></span> Acepta un «no» sin insistir
+            </div>
+          </div>
+        </div>
+        <div class="pie-semaforo">
+          <span>Si sientes miedo o peligro inmediato, llama al <strong>112</strong> . El <strong>016</strong> ofrece información y apoyo.</span><a href="#pide-ayuda">Ver ayuda segura →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN: PIDE AYUDA -->
+<section id="pide-ayuda">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Pide Ayuda
+      </h2>
+      <p>Si estás sufriendo violencia de género o conoces a alguien que la sufre, aquí encontrarás los recursos necesarios. No estás sola.
+      </p>
+    </div>
+    <div class="caja-aviso">
+      <div class="fila-aviso">
+        <strong>Si estás en peligro inmediato, llama al 112 o al 016.</strong>
+      </div>
+      <p>El 016 no deja rastro en la factura telefónica, aunque sí en el registro de llamadas del móvil (puedes borrarlo).
+      </p>
+    </div>
+    <h3 class="mb-20">Teléfonos de Emergencia y Atención
+    </h3>
+    <div class="cuadricula-telefonos">
+      <div class="tarjeta-telefono destacada">
+        <div class="numero-telefono">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" alt="Teléfono" class="icono-22">
+          <!-- Imagen generada con IA para ser unica -->
+          016
+        </div>
+        <h4>Atención a víctimas
+        </h4>
+        <p>Atención telefónica 24 horas, todos los días del año. No deja rastro en la factura.
+        </p>
+      </div>
+      <div class="tarjeta-telefono destacada">
+        <div class="numero-telefono">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwMUVEQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" alt="Teléfono" class="icono-22">
+          <!-- Imagen generada con IA para ser unica -->
+          112
+        </div>
+        <h4>Emergencias
+        </h4>
+        <p>Policía, ambulancias y emergencias. Llamar en situaciones de peligro inmediato.
+        </p>
+      </div>
+      <div class="tarjeta-telefono">
+        <div class="numero-telefono">091
+        </div>
+        <h4>Policía Nacional
+        </h4>
+        <p>Atención especializada en violencia de género.
+        </p>
+      </div>
+      <div class="tarjeta-telefono">
+        <div class="numero-telefono">062
+        </div>
+        <h4>Guardia Civil
+        </h4>
+        <p>Unidades especializadas en violencia contra la mujer.
+        </p>
+      </div>
+      <div class="tarjeta-telefono">
+        <div class="numero-telefono">900 20 20 10
+        </div>
+        <h4>ANAR (menores)
+        </h4>
+        <p>Ayuda a niños, niñas y adolescentes en riesgo.
+        </p>
+      </div>
+      <div class="tarjeta-telefono">
+        <div class="numero-telefono">600 000 016
+        </div>
+        <h4>Atención por WhatsApp
+        </h4>
+        <p>Servicio de atención por mensajería instantánea.
+        </p>
+      </div>
+    </div>
+    <div class="caja-puntos-cercanos">
+      <h3 class="titulo-centrado">Puntos Violetas Cercanos
+      </h3>
+      <p class="texto-centrado texto-secundario mt-8">Los Puntos Violeta son espacios seguros donde puedes recibir información, orientación y apoyo frente a la violencia de género.
+      </p>
+      <div class="dos-columnas-puntos">
+        <div class="tarjeta-punto-mini">
+          <strong>Centro Municipal de Servicios Sociales Centro</strong>
+          <p class="texto-sm texto-secundario mt-4">C/ Mayor, 45 - Madrid
+            <br>
+            915 480 000
+          </p>
+        </div>
+        <div class="tarjeta-punto-mini">
+          <strong>Centro de la Mujer Arganzuela</strong>
+          <p class="texto-sm texto-secundario mt-4">C/ Santa María, 12 - Madrid
+            <br>
+            914 800 200
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3 class="titulo-centrado mb-10">Consejos de Seguridad Digital
+    </h3>
+    <div class="cuadricula-seguridad">
+      <div class="item-seguridad">
+        Guarda este sitio web en favoritos con un nombre discreto
+      </div>
+      <div class="item-seguridad">
+        Usa el modo incógnito del navegador para no dejar rastro
+      </div>
+      <div class="item-seguridad">
+        Cambia contraseñas de correo y redes sociales regularmente
+      </div>
+      <div class="item-seguridad">
+        Desactiva la geolocalización de tu móvil si es necesario
+      </div>
+      <div class="item-seguridad">
+        Ten un plan de seguridad: identifica salidas, prepara una bolsa con documentos
+      </div>
+      <div class="item-seguridad">
+        Comunica tu situación a personas de confianza
+      </div>
+    </div>
+    <div class="caja-ayudar-alguien">
+      <h3 class="titulo-flexible">¿Quieres ayudar a alguien?
+      </h3>
+      <p>Si sospechas que alguien de tu entorno está sufriendo violencia de género:
+      </p>
+      <ul>
+        <li>Escucha sin juzgar ni presionar
+        </li>
+        <li>Hazle saber que no está sola y que no es su culpa
+        </li>
+        <li>Proporciona información sobre recursos disponibles
+        </li>
+        <li>No confrontes a la persona agresora
+        </li>
+        <li>Mantén la confidencialidad
+        </li>
+        <li>Anímale a pedir ayuda profesional
+        </li>
+      </ul>
+      <p><strong>También puedes llamar al 016 para recibir orientación sobre cómo ayudar.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN: EDUCACIÓN Y PREVENCIÓN -->
+<section id="educacion" class="fondo-gris">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Educación y Prevención
+      </h2>
+      <p>La educación es fundamental para prevenir la violencia de género. Encuentra aquí materiales educativos, guías y recursos para aprender y sensibilizar.
+      </p>
+    </div>
+    <div class="banner-educacion">
+      <h3>La prevención comienza con la educación
+      </h3>
+      <p>Accede a recursos educativos diseñados para sensibilizar, informar y empoderar a personas de todas las edades.
+      </p>
+    </div>
+    <div class="pestanas-educacion">
+      <button class="boton-pestana activa" onclick="selectTab('guias', this)">Guías y Manuales
+      </button>
+      <button class="boton-pestana" onclick="selectTab('videos', this)">Vídeos Educativos
+      </button>
+      <button class="boton-pestana" onclick="selectTab('jovenes', this)">Para Jóvenes
+      </button>
+    </div>
+    <div class="cuadricula-documentos" id="edu-content">
+      <div class="tarjeta-documento fondo-blanco">
+        <div class="icono-caja icono-centrado-16">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTQgMkg2YTIgMiAwIDAgMC0yIDJ2MTZhMiAyIDAgMCAwIDIgMmgxMmEyIDIgMCAwIDAgMi0yVjh6Ii8+PHBvbHlsaW5lIHBvaW50cz0iMTQgMiAxNCA4IDIwIDgiLz48bGluZSB4MT0iOCIgeTE9IjEzIiB4Mj0iMTYiIHkyPSIxMyIvPjxsaW5lIHgxPSI4IiB5MT0iMTciIHgyPSIxMyIgeTI9IjE3Ii8+PC9zdmc+" alt="Documento educativo" class="icono-24">
+          <!-- Imagen generada con IA para ser unica -->
+        </div>
+        <h4>Guía para detectar la violencia de género
+        </h4>
+        <p class="descripcion-documento">Señales de alerta y cómo identificar situaciones de riesgo.
+        </p>
+        <button class="boton-principal">Descargar PDF
+        </button>
+      </div>
+      <div class="tarjeta-documento fondo-blanco">
+        <div class="icono-caja icono-centrado-16">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTQgMkg2YTIgMiAwIDAgMC0yIDJ2MTZhMiAyIDAgMCAwIDIgMmgxMmEyIDIgMCAwIDAgMi0yVjh6Ii8+PHBvbHlsaW5lIHBvaW50cz0iMTQgMiAxNCA4IDIwIDgiLz48bGluZSB4MT0iOCIgeTE9IjEzIiB4Mj0iMTYiIHkyPSIxMyIvPjxsaW5lIHgxPSI4IiB5MT0iMTciIHgyPSIxMyIgeTI9IjE3Ii8+PC9zdmc+" alt="Documento educativo" class="icono-24">
+          <!-- Imagen generada con IA para ser unica -->
+        </div>
+        <h4>Manual de recursos y derechos
+        </h4>
+        <p class="descripcion-documento">Información completa sobre tus derechos y dónde acudir.
+        </p>
+        <button class="boton-principal">Descargar PDF
+        </button>
+      </div>
+      <div class="tarjeta-documento fondo-blanco">
+        <div class="icono-caja icono-centrado-16">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTQgMkg2YTIgMiAwIDAgMC0yIDJ2MTZhMiAyIDAgMCAwIDIgMmgxMmEyIDIgMCAwIDAgMi0yVjh6Ii8+PHBvbHlsaW5lIHBvaW50cz0iMTQgMiAxNCA4IDIwIDgiLz48bGluZSB4MT0iOCIgeTE9IjEzIiB4Mj0iMTYiIHkyPSIxMyIvPjxsaW5lIHgxPSI4IiB5MT0iMTciIHgyPSIxMyIgeTI9IjE3Ii8+PC9zdmc+" alt="Documento educativo" class="icono-24">
+          <!-- Imagen generada con IA para ser unica -->
+        </div>
+        <h4>Protocolo de actuación en emergencias
+        </h4>
+        <p class="descripcion-documento">Qué hacer en situaciones de peligro inmediato.
+        </p>
+        <button class="boton-principal">Descargar PDF
+        </button>
+      </div>
+    </div>
+    <div class="caja-aviso mt-30 mb-0">
+      <p><strong>Nota:</strong> Todos estos materiales son de descarga gratuita y pueden ser compartidos libremente con fines educativos y de sensibilización.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN: TESTIMONIOS -->
+<section id="testimonios">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Testimonios y Experiencias
+      </h2>
+      <p>Historias reales de personas que han superado la violencia de género. Sus testimonios nos recuerdan que hay esperanza y que salir es posible.
+      </p>
+    </div>
+    <div class="caja-aviso">
+      <div class="fila-aviso">
+        <span>Todos los testimonios son anónimos y compartidos con consentimiento. Respetamos la privacidad y la dignidad de cada persona.</span>
+      </div>
+    </div>
+    <div class="cuadricula-testimonios">
+      <div class="tarjeta-testimonio">
+        <div class="cabecera-testimonio">
+          <div class="inicial-avatar">
+            M
+          </div>
+          <div>
+            <strong>Anónimo</strong>
+            <br><small class="texto-secundario">34 años</small>
+          </div>
+        </div>
+        <p>"Durante años pensé que era normal. Que los celos significaban amor. Tardé mucho en darme cuenta de que era violencia. Hoy, tres años después, he recuperado mi vida. A todas las que están pasando por esto: no estáis solas, hay salida."
+        </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <div class="cabecera-testimonio">
+          <div class="inicial-avatar">
+            A
+          </div>
+          <div>
+            <strong>Anónimo</strong>
+            <br><small class="texto-secundario">28 años</small>
+          </div>
+        </div>
+        <p>"El control económico fue lo primero. Luego vinieron los insultos, disfrazados de 'bromas'. Cuando pedí ayuda en el 016, me orientaron paso a paso. Ahora trabajo, vivo sola con mi hija y somos felices. Si estás leyendo esto y dudas: llama."
+        </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <div class="cabecera-testimonio">
+          <div class="inicial-avatar">
+            S
+          </div>
+          <div>
+            <strong>Anónimo</strong>
+            <br><small class="texto-secundario">41 años</small>
+          </div>
+        </div>
+        <p>"Nunca hubo golpes físicos, pero el daño psicológico era devastador. Me hizo creer que no valía nada. Gracias a la terapia y al apoyo de la asociación, he vuelto a ser yo. La violencia no siempre deja marcas visibles, pero siempre deja heridas."
+        </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <div class="cabecera-testimonio">
+          <div class="inicial-avatar">
+            L
+          </div>
+          <div>
+            <strong>Anónimo</strong>
+            <br><small class="texto-secundario">25 años</small>
+          </div>
+        </div>
+        <p>"La violencia digital fue mi realidad: controlaba mi móvil, mis redes, mis conversaciones. Me aisló de mis amistades por miedo. Recuperar mi privacidad y mi libertad ha sido el mejor regalo que me he dado. Ahora ayudo a otras jóvenes a detectar estas señales."
+        </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <div class="cabecera-testimonio">
+          <div class="inicial-avatar">
+            C
+          </div>
+          <div>
+            <strong>Anónimo</strong>
+            <br><small class="texto-secundario">37 años</small>
+          </div>
+        </div>
+        <p>"Fui madre en medio de una relación de maltrato. Temía por mí y por mi bebé. Encontré un refugio seguro y todo el apoyo legal. Hoy mi hijo crece en un hogar sin violencia. Nunca es tarde, aunque parezca imposible."
+        </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <div class="cabecera-testimonio">
+          <div class="inicial-avatar">
+            R
+          </div>
+          <div>
+            <strong>Anónimo</strong>
+            <br><small class="texto-secundario">32 años</small>
+          </div>
+        </div>
+        <p>"Después de 15 años, pensaba que era demasiado tarde para empezar de nuevo. Estaba equivocada. Nunca es tarde. Hoy tengo un trabajo que me gusta, amistades verdaderas y, sobre todo, paz. A quienes dudan: merecéis una vida en paz."
+        </p>
+      </div>
+    </div>
+    <div class="caja-compartir-historia">
+      <div class="texto-centrado mb-24">
+        <div class="icono-caja icono-centrado-12">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMjEgMTVhMiAyIDAgMCAxLTIgMkg3bC00IDRWNWEyIDIgMCAwIDEgMi0yaDE0YTIgMiAwIDAgMSAyIDJ6Ii8+PGxpbmUgeDE9IjgiIHkxPSI5IiB4Mj0iMTYiIHkyPSI5Ii8+PGxpbmUgeDE9IjgiIHkxPSIxMyIgeDI9IjEzIiB5Mj0iMTMiLz48L3N2Zz4=" alt="Comparte tu historia" class="icono-24">
+          <!-- Imagen generada con IA para ser unica -->
+        </div>
+        <h3>Comparte tu historia
+        </h3>
+        <p class="texto-md texto-secundario">Si has superado una situación de violencia y quieres compartir tu experiencia para ayudar a otras personas, puedes hacerlo de forma anónima y segura.
+        </p>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Gracias por compartir tu historia de forma segura.');">
+        <div class="grupo-formulario">
+          <label>Tu historia (opcional: puedes mantener el anonimato)
+          </label>
+          <textarea class="campo-formulario" rows="4" placeholder="Comparte tu experiencia si te sientes cómoda/o. Tu historia puede ser fuente de inspiración y esperanza para otras personas...">
+          </textarea>
+        </div>
+        <div class="fila-formulario">
+          <div class="grupo-formulario">
+            <label>Edad (opcional)
+            </label>
+            <input type="text" class="campo-formulario" placeholder="Ej: 30 años">
+          </div>
+          <div class="grupo-formulario">
+            <label>Inicial (opcional)
+            </label>
+            <input type="text" class="campo-formulario" placeholder="Ej: M">
+          </div>
+        </div>
+        <button type="submit" class="boton-principal">Enviar testimonio de forma anónima
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN: PUNTOS VIOLETA -->
+<section id="puntos-violeta" class="fondo-gris">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Iniciativas y Puntos Violeta
+      </h2>
+      <p>Los Puntos Violeta son espacios seguros donde puedes encontrar información, orientación y apoyo frente a la violencia de género.
+      </p>
+    </div>
+    <h3 class="texto-centrado mb-20">Encuentra un Punto Violeta cerca de ti
+    </h3>
+    <div class="marcador-mapa">
+      <strong>Mapa interactivo de Puntos Violeta</strong><small>Próximamente: Visualización de ubicaciones en mapa</small>
+    </div>
+    <div class="cuadricula-directorio">
+      <div class="tarjeta-directorio fondo-blanco">
+        <strong>Punto Violeta Centro</strong>
+        <br><span class="etiqueta-directorio">Espacio cultural</span>
+        <p class="linea-dato">Calle Gran Vía, 28 - Madrid
+        </p>
+        <p class="linea-dato">L-V: 10:00-20:00 | S-D: 11:00-14:00
+        </p>
+        <div class="etiquetas-servicios">
+          <span>Información</span><span>Orientación</span><span>Material educativo</span>
+        </div>
+      </div>
+      <div class="tarjeta-directorio fondo-blanco">
+        <strong>Punto Violeta Universidad</strong>
+        <br><span class="etiqueta-directorio">Centro educativo</span>
+        <p class="linea-dato">Campus Moncloa - Madrid
+        </p>
+        <p class="linea-dato">L-V: 8:30-19:00
+        </p>
+        <div class="etiquetas-servicios">
+          <span>Atención estudiantes</span><span>Talleres</span><span>Recursos</span>
+        </div>
+      </div>
+      <div class="tarjeta-directorio fondo-blanco">
+        <strong>Punto Violeta Ayuntamiento</strong>
+        <br><span class="etiqueta-directorio">Edificio municipal</span>
+        <p class="linea-dato">Plaza Mayor, 1 - Madrid
+        </p>
+        <p class="linea-dato">L-V: 8:00-15:00
+        </p>
+        <div class="etiquetas-servicios">
+          <span>Información</span><span>Derivación servicios</span><span>Atención social</span>
+        </div>
+      </div>
+      <div class="tarjeta-directorio fondo-blanco">
+        <strong>Punto Violeta Metro Sol</strong>
+        <br><span class="etiqueta-directorio">Espacio pÚblico</span>
+        <p class="linea-dato">Estación de Metro Sol - Madrid
+        </p>
+        <p class="linea-dato">L-D: 6:00-2:00
+        </p>
+      </div>
+      <div class="tarjeta-directorio fondo-blanco">
+        <strong>Punto Violeta Biblioteca Regional</strong>
+        <br><span class="etiqueta-directorio">Espacio cultural</span>
+        <p class="linea-dato">Paseo de Recoletos, 20 - Madrid
+        </p>
+        <p class="linea-dato">L-S: 9:00-21:00 | D: Cerrado
+        </p>
+      </div>
+      <div class="tarjeta-directorio fondo-blanco">
+        <strong>Punto Violeta Polideportivo Municipal</strong>
+        <br><span class="etiqueta-directorio">Centro deportivo</span>
+        <p class="linea-dato">Calle del Deporte, 5 - Madrid
+        </p>
+        <p class="linea-dato">L-D: 8:00-22:00
+        </p>
+      </div>
+    </div>
+    <!-- VOLUNTARIADO -->
+    <div class="caja-voluntariado">
+      <h3>Únete como voluntaria/o
+      </h3>
+      <p class="descripcion-voluntariado">Tu colaboración es fundamental para hacer crecer esta red de apoyo. Descubre cómo puedes ayudar a prevenir y erradicar la violencia de género.
+      </p>
+      <div class="cuadricula-documentos mb-24">
+        <div class="tarjeta-documento">
+          <div class="icono-caja icono-centrado-12">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMjAuODQgNC42MWE1LjUgNS41IDAgMCAwLTcuNzggMEwxMiA1LjY3bC0xLjA2LTEuMDZhNS41IDUuNSAwIDAgMC03Ljc4IDcuNzhsMS4wNiAxLjA2TDEyIDIxLjIzbDcuNzgtNy43OCAxLjA2LTEuMDZhNS41IDUuNSAwIDAgMCAwLTcuNzh6Ii8+PC9zdmc+" alt="Acompañamiento a víctimas" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div>
+          <h4>Acompañamiento a víctimas
+          </h4>
+          <p class="texto-sm texto-secundario mt-8">Apoyo emocional y acompañamiento en gestiones administrativas y legales.
+          </p>
+        </div>
+        <div class="tarjeta-documento">
+          <div class="icono-caja icono-centrado-12">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMjIgMTBsLTEwLTVMMiAxMGwxMCA1IDEwLTV6Ii8+PHBhdGggZD0iTTYgMTJ2NWMwIDEuNjYgMi42OSAzIDYgM3M2LTEuMzQgNi0zdi01Ii8+PC9zdmc+" alt="Sensibilización en centros educativos" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div>
+          <h4>Sensibilización en centros educativos
+          </h4>
+          <p class="texto-sm texto-secundario mt-8">Talleres y charlas de prevención en colegios e institutos.
+          </p>
+        </div>
+        <div class="tarjeta-documento">
+          <div class="icono-caja icono-centrado-12">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMjEgMTBjMCA3LTkgMTMtOSAxM3MtOS02LTktMTNhOSA5IDAgMCAxIDE4IDB6Ii8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMCIgcj0iMyIvPjwvc3ZnPg==" alt="Gestión de Puntos Violeta" class="icono-24">
+            <!-- Imagen generada con IA para ser unica -->
+          </div>
+          <h4>Gestión de Puntos Violeta
+          </h4>
+          <p class="texto-sm texto-secundario mt-8">Atención e información en espacios Punto Violeta.
+          </p>
+        </div>
+      </div>
+      <button class="boton-principal boton-ancho-auto">Quiero ser voluntaria/o
+      </button>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN: SUMA TU ESPACIO -->
+<section id="suma-espacio">
+  <div class="contenedor">
+    <div class="contenedor-dividido-espacio">
+      <div class="columna-izquierda-espacio">
+        <span class="insignia insignia-translucida">HAZ CRECER LA RED</span>
+        <h2>Suma tu espacio
+        </h2>
+        <p class="texto-intro-espacio">Convierte tu comercio, asociación o centro educativo en un lugar visible de apoyo, escucha y orientación.
+        </p>
+        <div class="caracteristica-espacio">
+          Comercios de proximidad
+        </div>
+        <div class="caracteristica-espacio">
+          Centros educativos
+        </div>
+        <div class="caracteristica-espacio">
+          Entidades y espacios culturales
+        </div>
+      </div>
+      <div class="columna-derecha-espacio">
+        <form onsubmit="event.preventDefault(); alert('Solicitud de espacio enviada correctamente.');">
+          <label class="etiqueta-campo">Tipo de espacio
+          </label>
+          <div class="selector-tipo-espacio">
+            <button type="button" class="boton-tipo-espacio seleccionado" onclick="selectType(this)">Comercio
+            </button>
+            <button type="button" class="boton-tipo-espacio" onclick="selectType(this)">Centro educativo
+            </button>
+            <button type="button" class="boton-tipo-espacio" onclick="selectType(this)">Otra entidad
+            </button>
+          </div>
+          <div class="fila-formulario">
+            <div class="grupo-formulario">
+              <label>Nombre del espacio
+              </label>
+              <input type="text" class="campo-formulario" placeholder="Ej. Librería Horizonte" required>
+            </div>
+            <div class="grupo-formulario">
+              <label>Persona de contacto
+              </label>
+              <input type="text" class="campo-formulario" placeholder="Nombre y apellidos" required>
+            </div>
+          </div>
+          <div class="fila-formulario">
+            <div class="grupo-formulario">
+              <label>Dirección
+              </label>
+              <input type="text" class="campo-formulario" placeholder="Calle, número y local" required>
+            </div>
+            <div class="grupo-formulario">
+              <label>Código postal
+              </label>
+              <input type="text" class="campo-formulario" placeholder="28001" required>
+            </div>
+          </div>
+          <div class="fila-formulario">
+            <div class="grupo-formulario">
+              <label>Municipio
+              </label>
+              <input type="text" class="campo-formulario" placeholder="Madrid" required>
+            </div>
+            <div class="grupo-formulario">
+              <label>Provincia
+              </label>
+              <input type="text" class="campo-formulario" placeholder="Madrid" required>
+            </div>
+          </div>
+          <div class="fila-formulario">
+            <div class="grupo-formulario">
+              <label>Correo electrónico
+              </label>
+              <input type="email" class="campo-formulario" placeholder="contacto@espacio.es" required>
+            </div>
+            <div class="grupo-formulario">
+              <label>Teléfono
+              </label>
+              <input type="tel" class="campo-formulario" placeholder="600 000 000" required>
+            </div>
+          </div>
+          <button type="submit" class="boton-principal">Registrar espacio seguro
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN: CONTACTO -->
+<section id="contacto" class="fondo-gris">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Contacto y Participación
+      </h2>
+      <p>¿Tienes preguntas? ¿Quieres colaborar con nosotros? Estamos aquí para escucharte.
+      </p>
+    </div>
+    <div class="cuadricula-contacto">
+      <div>
+        <div class="tarjeta-contacto fondo-blanco mb-24">
+          <h3 class="mb-18">Información de contacto
+          </h3>
+          <p class="dato-contacto"><span><strong>Teléfono:</strong>
+            <br>
+            +34 910 000 000 <small>(Lunes a Viernes, 9:00 - 18:00)</small></span>
+          </p>
+          <p class="dato-contacto"><span><strong>Email:</strong>
+            <br>
+            info@vidaslibres.org</span>
+          </p>
+          <p class="dato-contacto mb-0"><span><strong>Dirección:</strong>
+            <br>
+            Calle de la Igualdad, 15
+            <br>
+            28001 Madrid, España</span>
+          </p>
+        </div>
+        <div class="tarjeta-contacto fondo-blanco">
+          <h4 class="mb-10">Sobre Vidas Libres
+          </h4>
+          <p class="texto-nosotros">Somos una asociación sin ánimo de lucro dedicada a la prevención y erradicación de la violencia de género desde 2010. Trabajamos en sensibilización, educación, apoyo a víctimas y creación de espacios seguros.
+          </p>
+        </div>
+      </div>
+      <div class="tarjeta-contacto fondo-blanco">
+        <h3 class="mb-18">Envíanos un mensaje
+        </h3>
+        <form onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente.');">
+          <div class="grupo-formulario">
+            <label>Nombre completo
+            </label>
+            <input type="text" class="campo-formulario" placeholder="Tu nombre" required>
+          </div>
+          <div class="grupo-formulario">
+            <label>Email
+            </label>
+            <input type="email" class="campo-formulario" placeholder="tu@email.com" required>
+          </div>
+          <div class="grupo-formulario">
+            <label>Asunto
+            </label>
+            <input type="text" class="campo-formulario" placeholder="Consulta general" required>
+          </div>
+          <div class="grupo-formulario">
+            <label>Mensaje
+            </label>
+            <textarea class="campo-formulario" rows="4" placeholder="Escribe tu mensaje aquí..." required>
+            </textarea>
+          </div>
+          <div class="grupo-formulario fila-casilla">
+            <input type="checkbox" required class="mt-4"><small class="texto-secundario">He leído y acepto la política de privacidad. Mis datos serán tratados de forma confidencial.</small>
+          </div>
+          <button type="submit" class="boton-principal">Enviar mensaje
+          </button>
+        </form>
+        <div class="caja-aviso mt-20 mb-0 texto-xs">
+          <p><strong>Importante:</strong> Si estás en una situación de emergencia, llama directamente al <strong>016</strong> o al <strong>112</strong> . Este formulario es solo para consultas generales y no es un canal de emergencia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="contenedor">
+    <div class="cuadricula-pie">
+      <div>
+        <div class="logotipo mb-14">
+          <div class="icono-logotipo icono-logotipo-pie">
+          </div>
+          <div class="texto-logotipo">
+            <strong class="texto-blanco">Vidas Libres</strong><small class="texto-lavanda">RED DE APOYO</small>
+          </div>
+        </div>
+        <p>Asociación dedicada a la prevención y erradicación de la violencia de género. Juntas y juntos por una vida libre de violencia.
+        </p>
+      </div>
+      <div>
+        <h4>Enlaces Rápidos
+        </h4>
+        <ul>
+          <li><a href="#que-es">Qué es la violencia de género</a>
+          </li>
+          <li><a href="#pide-ayuda">Pide ayuda</a>
+          </li>
+          <li><a href="#educacion">Educación</a>
+          </li>
+          <li><a href="#puntos-violeta">Puntos Violeta</a>
+          </li>
+          <li><a href="#suma-espacio">Suma tu espacio</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto
+        </h4>
+        <ul>
+          <li>016 (24/7)
+          </li>
+          <li>112 (Emergencias)
+          </li>
+          <li>info@vidaslibres.org
+          </li>
+          <li>Madrid, España
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Síguenos
+        </h4>
+        <p class="mb-12">Únete a nuestra comunidad y mantente informado sobre nuestras iniciativas.
+        </p>
+        <div class="fila-redes">
+          <a href="#" class="enlace-red-pie">f</a><a href="#" class="enlace-red-pie">ig</a><a href="#" class="enlace-red-pie">x</a>
+        </div>
+      </div>
+    </div>
+    <div class="pie-inferior">
+      © 2026 Asociación Vidas Libres. Todos los derechos reservados.
+      <br>
+      Sitio web desarrollado con enfoque inclusivo y accesible.
+    </div>
+  </div>
+</footer>
+
+
+<!-- FIN HTML  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Enlace al JavaScript (USO DE IA PARA QUE FUNCIONARA)  -->
+  <script>
+    var semaforoData = {
+      green: {
+        level: "NIVEL VERDE",
+        title: "Una relación que cuida",
+        textClass: "texto-verde",
+        dotClass: "verde",
+        badgeClass: "insignia-verde",
+        desc: "Hay libertad, escucha y acuerdos. Puedes ser tú sin miedo a una reacción.",
+        signs: [
+          "Respeta tus límites y decisiones",
+          "Celebra tus amistades y proyectos",
+          "Podéis hablar sin miedo",
+          "Acepta un «no» sin insistir"
+        ]
+      },
+      amber: {
+        level: "NIVEL AMARILLO",
+        title: "Señales de alerta: observa y pon límites",
+        textClass: "texto-ambar",
+        dotClass: "ambar",
+        badgeClass: "insignia-ambar",
+        desc: "Aparecen actitudes de control leve, celos o falta de reciprocidad que conviene revisar a tiempo.",
+        signs: [
+          "Revisa tu móvil o pregunta constantemente dónde estás",
+          "Hace comentarios sarcásticos o descalificaciones leves",
+          "Te hace sentir culpable cuando pasas tiempo con otras personas",
+          "Minimiza tus emociones o evita hablar de los problemas"
+        ]
+      },
+      red: {
+        level: "NIVEL ROJO",
+        title: "Peligro: detente y pide ayuda",
+        textClass: "texto-rojo",
+        dotClass: "rojo",
+        badgeClass: "insignia-rojo",
+        desc: "Existen conductas de control grave, miedo, humillación o agresión. Busca apoyo seguro de inmediato.",
+        signs: [
+          "Te controla el dinero, el teléfono, redes o ubicación",
+          "Te insulta, amenaza, humilla o te aísla de tu entorno",
+          "Sientes miedo ante sus reacciones o cambios de humor",
+          "Ha habido empujones, golpes o relaciones sin consentimiento"
+        ]
+      }
+    };
+
+    function renderSemaforo(level) {
+      if (!semaforoData || !semaforoData[level]) { return; }
+      var data = semaforoData[level];
+      var display = document.getElementById("semaforo-display");
+      var signsHtml = data.signs.map(function (s) {
+        return '<div class="item-senal"><span class="punto-senal ' + data.dotClass + '"></span> ' + s + '</div>';
+      }).join("");
+
+      display.innerHTML =
+        '<div>' +
+          '<div class="fila-superior-semaforo">' +
+            '<div>' +
+              '<div class="etiqueta-nivel ' + (data.textClass || "texto-verde") + '">' + data.level + '</div>' +
+              '<h3>' + data.title + '</h3>' +
+            '</div>' +
+            '<div class="insignia-estado-semaforo ' + (data.badgeClass || "insignia-verde") + '">' +
+              '<svg class="icono-ui pequeno" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' +
+            '</div>' +
+          '</div>' +
+          '<p class="texto-secundario mt-6">' + data.desc + '</p>' +
+          '<div class="cuadricula-senales">' + signsHtml + '</div>' +
+        '</div>' +
+        '<div class="pie-semaforo">' +
+          '<span>Si sientes miedo o peligro inmediato, llama al <strong>112</strong>. El <strong>016</strong> ofrece informaci&oacute;n y apoyo.</span>' +
+          '<a href="#pide-ayuda">Ver ayuda segura &#8594;</a>' +
+        '</div>';
+    }
+
+    renderSemaforo("green");
+
+    if (window.fetch) {
+      fetch("semaforo.json")
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) {
+          if (d && d.green && d.amber && d.red) {
+            semaforoData = d;
+            var activeBtn = document.querySelector(".boton-luz.activo-ambar, .boton-luz.activo-rojo, .boton-luz.activo-verde");
+            var lvl = activeBtn ? (activeBtn.classList.contains("activo-ambar") ? "amber" : (activeBtn.classList.contains("activo-rojo") ? "red" : "green")) : "green";
+            renderSemaforo(lvl);
+          }
+        })
+        .catch(function () {});
+    }
+
+    function salidaRapida() {
+      window.location.replace("https://www.google.com");
+    }
+
+    function setSemaforo(level, btn) {
+      var mapaNivel = { green: "verde", amber: "ambar", red: "rojo" };
+      document.querySelectorAll(".boton-luz").forEach(function (b) {
+        b.classList.remove("activo-verde", "activo-ambar", "activo-rojo");
+      });
+      btn.classList.add("activo-" + (mapaNivel[level] || level));
+      renderSemaforo(level);
+    }
+
+    var eduTabsData = {
+      guias: [
+        { title: "Guía para detectar la violencia de género", desc: "Señales de alerta y cómo identificar situaciones de riesgo.", btn: "Descargar PDF", icon: '<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTQgMkg2YTIgMiAwIDAgMC0yIDJ2MTZhMiAyIDAgMCAwIDIgMmgxMmEyIDIgMCAwIDAgMi0yVjh6Ii8+PHBvbHlsaW5lIHBvaW50cz0iMTQgMiAxNCA4IDIwIDgiLz48bGluZSB4MT0iOCIgeTE9IjEzIiB4Mj0iMTYiIHkyPSIxMyIvPjxsaW5lIHgxPSI4IiB5MT0iMTciIHgyPSIxMyIgeTI9IjE3Ii8+PC9zdmc+" alt="Documento educativo" class="icono-24">' },
+        { title: "Manual de recursos y derechos", desc: "Información completa sobre tus derechos y dónde acudir.", btn: "Descargar PDF", icon: '<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTQgMkg2YTIgMiAwIDAgMC0yIDJ2MTZhMiAyIDAgMCAwIDIgMmgxMmEyIDIgMCAwIDAgMi0yVjh6Ii8+PHBvbHlsaW5lIHBvaW50cz0iMTQgMiAxNCA4IDIwIDgiLz48bGluZSB4MT0iOCIgeTE9IjEzIiB4Mj0iMTYiIHkyPSIxMyIvPjxsaW5lIHgxPSI4IiB5MT0iMTciIHgyPSIxMyIgeTI9IjE3Ii8+PC9zdmc+" alt="Documento educativo" class="icono-24">' },
+        { title: "Protocolo de actuación en emergencias", desc: "Qué hacer en situaciones de peligro inmediato.", btn: "Descargar PDF", icon: '<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTQgMkg2YTIgMiAwIDAgMC0yIDJ2MTZhMiAyIDAgMCAwIDIgMmgxMmEyIDIgMCAwIDAgMi0yVjh6Ii8+PHBvbHlsaW5lIHBvaW50cz0iMTQgMiAxNCA4IDIwIDgiLz48bGluZSB4MT0iOCIgeTE9IjEzIiB4Mj0iMTYiIHkyPSIxMyIvPjxsaW5lIHgxPSI4IiB5MT0iMTciIHgyPSIxMyIgeTI9IjE3Ii8+PC9zdmc+" alt="Documento educativo" class="icono-24">' }
+      ],
+      videos: [
+        { title: "Vídeo 1: Cómo identificar relaciones tóxicas", desc: "Cápsula audiovisual sobre control emocional y límites sanos.", btn: "Descargar", icon: '<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSI1IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiByeT0iMiIvPjxwb2x5Z29uIHBvaW50cz0iMTcgMTAgMjIgNyAyMiAxNyAxNyAxNCAxNyAxMCIvPjwvc3ZnPg==" alt="Vídeo educativo" class="icono-24">' },
+        { title: "Vídeo 2: Prevención en el entorno digital", desc: "Material audiovisual sobre privacidad, redes y acoso online.", btn: "Descargar", icon: '<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSI1IiB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHJ4PSIyIiByeT0iMiIvPjxwb2x5Z29uIHBvaW50cz0iMTcgMTAgMjIgNyAyMiAxNyAxNyAxNCAxNyAxMCIvPjwvc3ZnPg==" alt="Vídeo educativo" class="icono-24">' }
+      ],
+      jovenes: [
+        { title: "Noticia 1: Nuevos talleres de igualdad en institutos", desc: "Programas juveniles para fomentar el respeto y la prevención.", btn: "Descargar", icon: '<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCAyMmgxNmEyIDIgMCAwIDAgMi0yVjZhMiAyIDAgMCAwLTItMkg2YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMnoiLz48bGluZSB4MT0iOCIgeTE9IjEwIiB4Mj0iMTYiIHkyPSIxMCIvPjxsaW5lIHgxPSI4IiB5MT0iMTQiIHgyPSIxNCIgeTI9IjE0Ii8+PC9zdmc+" alt="Noticia juvenil" class="icono-24">' },
+        { title: "Noticia 2: Guía rápida contra el ciberacoso juvenil", desc: "Claves prácticas para actuar ante mensajes o control en redes.", btn: "Descargar", icon: '<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDFFREMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCAyMmgxNmEyIDIgMCAwIDAgMi0yVjZhMiAyIDAgMCAwLTItMkg2YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMnoiLz48bGluZSB4MT0iOCIgeTE9IjEwIiB4Mj0iMTYiIHkyPSIxMCIvPjxsaW5lIHgxPSI4IiB5MT0iMTQiIHgyPSIxNCIgeTI9IjE0Ii8+PC9zdmc+" alt="Noticia juvenil" class="icono-24">' }
+      ]
+    };
+
+    function selectTab(tabKey, btn) {
+      document.querySelectorAll(".boton-pestana").forEach(function (t) { t.classList.remove("activa"); });
+      if (btn) { btn.classList.add("activa"); }
+      var items = eduTabsData[tabKey] || eduTabsData.guias;
+      var box = document.getElementById("edu-content");
+      if (!box) { return; }
+      box.innerHTML = items.map(function (it) {
+        return '<div class="tarjeta-documento fondo-blanco"><div class="icono-caja icono-centrado-16">' + it.icon + '</div><h4>' +
+          it.title + '</h4><p class="descripcion-documento">' +
+          it.desc + '</p><button class="boton-principal">' + it.btn + '</button></div>';
+      }).join("");
+    }
+
+    function selectType(btn) {
+      document.querySelectorAll(".boton-tipo-espacio").forEach(function (t) { t.classList.remove("seleccionado"); });
+      btn.classList.add("seleccionado");
+    }
+  </script>
+</body>
+</html>
